@@ -23,9 +23,9 @@
   </head>
 
   <body>
-    <nav>
+    <nav id="nav">
       <ul>
-        <li>accueil</li>
+        <li id="home">accueil</li>
         <li>formations</li>
         <li>2kpi academy</li>
         <li>contact</li>
@@ -136,7 +136,7 @@
       </div>
 
       <div class="who-us">
-        <img src="./assets/img/choisir2kpi.jpg" alt="Qui sommes-nous" />
+        <img src="./assets/img/choisir2kpi.png" alt="Qui sommes-nous" />
       </div>
     </section>
 
@@ -209,10 +209,10 @@
       </div>
 
       <form action="">
-        <input type="text" id="email" placeholder="Votre adresse e-mail" />
+        <input type="email" id="email" placeholder="Votre adresse e-mail" />
         <br />
 
-        <input type="text" id="email" placeholder="Objet" /> <br />
+        <input type="text" id="objet" placeholder="Objet" /> <br />
 
         <textarea
           placeholder="Bonjour, écrivez-vous ici ..."
@@ -228,7 +228,9 @@
     <footer>
       <div class="last-info">
         <div class="last-logo">
-          <img src="./assets/img/logo2kpi.png" alt="logo de 2KPI " />
+          <a href="#home"
+            ><img src="./assets/img/logo2kpi.png" alt="logo de 2KPI "
+          /></a>
           <p>
             « Développer des compétences numériques pour des territoires plus
             intelligents. »
@@ -238,24 +240,43 @@
         <div class="resume-site">
           <h2>besoin d'aide</h2>
           <ul>
-            <li>accueil</li>
-            <li>à propos</li>
-            <li>nos formations</li>
-            <li>2kpi academy</li>
+            <li><a href="" target="_blank">accueil</a></li>
+            <li><a href="" target="_blank">à propos</a></li>
+            <li><a href="" target="_blank">nos formations</a></li>
+            <li><a href="" target="_blank">2kpi academy</a></li>
           </ul>
         </div>
 
         <div class="resume-contact">
           <h2>contactez-nous</h2>
           <h3>Abidjan, Côte d'Ivoire</h3>
-          <p><i class="fa-solid fa-envelope"></i>contacts@2kpinnov.org</p>
+          <p>
+            <i class="fa-solid fa-envelope"></i
+            ><a href="mailto:contacts@2kpinnov.org">contacts@2kpinnov.org</a>
+          </p>
           <p><i class="fa-solid fa-phone-flip"></i>+225 07 49 30 5943</p>
+          <div class="social-network">
+            <h3>Suivez-nous</h3>
+            <ul>
+              <li>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="copyright">
         <p>Copyright 2026 - 2KPI | Tous droits réservés.</p>
-        <i class="fa-solid fa-circle-arrow-up"></i>
+        <a href="#nav"><i class="fa-solid fa-circle-arrow-up"></i></a>
       </div>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
