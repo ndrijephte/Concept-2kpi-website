@@ -1,0 +1,47 @@
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  /* padding: 0 25px; */
+}
+
+nav li:first-child a {
+  color: var(--color2);
+}
+nav li:nth-child(2) a {
+  color: var(--color3);
+}
+
+.header-container {
+  background: url(../assets/img/backgrounds/bg_formation.png) center/cover fixed;
+  display: block;
+  text-align: center;
+  padding: 75px 0;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  font-size: 1rem;
+  max-width: 700px;
+  text-align: left;
+}
+
+.intro {
+  background: var(--color2);
+  width: 250px;
+  position: absolute;
+  right: 50px;
+  bottom: 120px;
+  padding: 20px;
+  font-family: Josefin, Jost, Montserrat, serif;
+  font-size: 0.7rem;
+  color: var(--color1);
+  border-radius: 0 20px 0 0;
+}
+
+.formation-practice {
+  margin-top: 150px;
+}
