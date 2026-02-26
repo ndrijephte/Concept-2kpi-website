@@ -13,7 +13,10 @@ nav li:nth-child(2) a {
 }
 
 .header-container {
-  background: url(../assets/img/backgrounds/bg_formation.png) center/cover fixed;
+  background:
+    linear-gradient(rgba(120, 120, 120, 0.2), rgba(0, 10, 40, 0.8)),
+    url(../assets/img/backgrounds/bg_formation.png) center/cover fixed;
+
   display: block;
   text-align: center;
   padding: 75px 0;
@@ -33,7 +36,7 @@ h1 {
   background: var(--color2);
   width: 300px;
   position: relative;
-  left: 900px;
+  left: 1100px;
   bottom: 60px;
   padding: 20px;
   font-family: Josefin, Jost, Montserrat, serif;

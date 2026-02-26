@@ -1,0 +1,46 @@
+nav li:last-child a {
+  color: var(--color3);
+}
+nav li:nth-child(5) a {
+  color: var(--color2);
+}
+
+.need-formation {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 30px auto;
+  padding: 10px 100px;
+}
+
+.need-formation-detail {
+  background: var(--color4);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 25px;
+}
+.need-formation-img {
+  height: 300px;
+  padding-right: 50px;
+}
+
+section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.invitation h3 {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.contact-us {
+  margin-top: 40px;
+}
+.contact-us p {
+  color: var(--color1);
+}

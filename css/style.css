@@ -32,10 +32,6 @@ a {
   color: var(--color2);
 }
 
-body {
-  min-height: 100vh;
-}
-
 nav {
   background: var(--color1);
   height: 35px;
@@ -88,23 +84,28 @@ nav li::before {
 }
 
 nav li:hover:before {
-  transform: scaleX(1); /* s’étale jusqu’à 100% */
+  transform: scaleX(1);
 }
 
 .header-container {
-  background: url(../assets/img/backgrounds/bg_officiel_.png) center/cover fixed;
+  background:
+    linear-gradient(rgba(120, 120, 120, 0.2), rgba(0, 10, 40, 0.8)),
+    url(../assets/img/backgrounds/bg_officiel_.png) center/cover fixed;
+
   display: block;
   text-align: center;
   padding: 75px 0;
+  position: relative;
+  color: var(--color1);
 }
 
 .logo-container {
-  background: rgba(255, 255, 255, 0.39);
-  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
   max-width: 300px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 132px;
 }
 
 .logo-container img {
@@ -168,7 +169,7 @@ h1 span {
   padding: 10px 25px;
 }
 .dream-container p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 600;
   font-family: Jost, Tahoma, Geneva, Verdana, sans-serif;
   max-width: 1100px;
@@ -686,3 +687,24 @@ footer a:hover {
   font-size: 2rem;
   cursor: pointer;
 }
+
+/* Transtion de page  */
+/* body {
+  opacity: 0;
+  transform: translateY(10px);
+
+  animation: pageEnter 0.6s ease forwards;
+}
+
+@keyframes pageEnter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.fade-out {
+  opacity: 0;
+  transform: translateY(-10px); */
+/* } */
+/* -------------------- */
